@@ -9,5 +9,7 @@ namespace API.Entities
     {
         public int Id { get; set; } //this will be primary key
         public string UserName { get; set; }
+        public byte[] PasswordHash {get; set; }
+        public byte[] PasswordSalt { get; set; }
     }
 }
